@@ -1,12 +1,24 @@
 <template>
 
+  <div id="app">
+    <TitleEl />
+    <HeroEl />
+  </div>
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import TitleEl from './components/TitleEl.vue'
+import HeroEl from './components/HeroEl.vue'
+
 
 export default {
-
+  name: "App",
+  components: {
+    TitleEl,
+    HeroEl
+  }
 }
 </script>
 
